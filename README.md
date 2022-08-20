@@ -1,6 +1,8 @@
-<p align="center">
+<p align="center" style="background: black">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
+<p align="center" style="background: black">
    <a href="https://litethinking.com/home" target="blank"><img src="https://litethinking.com/static/media/Logo_Lite_Thinking_Sin_Fondo.0aa257fac8571af0f71e.png" width="200" alt="lite Logo" /></a>
 </p>
 
