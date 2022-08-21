@@ -7,8 +7,17 @@ import { AppModule } from './app.module';
 
 async function Main() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors({ credentials: true });
   app.enableVersioning({ type: VersioningType.URI, defaultVersion: '1' });
-  app.useGlobalPipes(new ValidationPipe({ transform: true }));
+  app.useGlobalPipes(
+    new ValidationPipe({
+      transform: true,
+      whitelist: true,
+      transformOptions: {
+        enableImplicitConversion: true,
+      },
+    }),
+  );
 
   const config = new DocumentBuilder()
     .setTitle('Test Lite Thinking Service')

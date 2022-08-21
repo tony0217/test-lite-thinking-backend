@@ -24,11 +24,6 @@ npm i -g @nestjs/cli
 yarn start:dev
 ```
 
-7. Reconstruir la base de datos con la semilla
-```
-url/api/v1/seed
-```
-
 ## Stack usado
 * MongoDB
 * Nest
