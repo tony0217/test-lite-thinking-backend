@@ -34,7 +34,7 @@ yarn start:dev
 
 
 # Notas
-aws redeploy sin cambios:
+Mirar Documentacion:
 ```
-comandos
+https://test-lite-thinking-backend.herokuapp.com/
 ```
