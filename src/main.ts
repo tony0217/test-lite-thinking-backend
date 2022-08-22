@@ -28,7 +28,7 @@ async function Main() {
   SwaggerModule.setup('docs', app, document);
 
   const configService = app.get(ConfigService);
-  const port = configService.get('APP_PORT');
+  const port = configService.get('APP_PORT') || process.env.PORT;
   const mode = process.env.NODE_ENV;
   await app.listen(port);
 
